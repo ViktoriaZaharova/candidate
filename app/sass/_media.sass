@@ -1,0 +1,290 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1320px)
+  .news-box
+    width: 32%
+    height: auto
+    .date
+      margin: 20px 0 0
+
+  .video-box
+    width: 250px
+
+  .form-group__message
+    max-width: 450px
+
+  .video-page .video-box
+    width: 100%
+
+@media only screen and (max-width: 1250px)
+  .video-section__wrapper
+    justify-content: space-around
+
+  .video-box
+    margin: 0 0 30px
+
+@media only screen and (max-width: 1200px)
+  .about-candidate__img
+    width: 450px
+    margin: 0 -80px 0 0
+
+  main .container
+    width: calc(100% - 30px)
+
+  .about-content__box
+    max-width: 32%
+    h3
+      font-size: 18px
+
+  .form-group__message
+    max-width: 350px
+
+  .form-group
+    max-width: 320px
+
+  .col-25
+    width: 33%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .about-candidate__content
+    max-width: 290px
+
+  h1
+    font-size: 45px
+
+  .slogan
+    font-size: 16px
+
+  .about-candidate__img
+    width: 350px
+    margin: 0 -60px 0 0
+
+  main .container
+    padding: 30px 20px
+    font-size: 14px
+
+  .news-box
+    font-size: 14px
+    width: 49%
+    border-radius: 15px
+
+  .news-box__body
+    padding: 20px
+
+  h2
+    font-size: 24px
+
+  .video-section
+    width: 100%
+    margin: 40px 0 0
+    padding: 0
+
+  .photo-section
+    width: 100%
+
+  .form-group
+    max-width: 49%
+
+  .copyright
+    max-width: 250px
+    margin: 0 40px 0 0
+
+  .col-16
+    width: 20%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .menu li a
+    font-size: 14px
+
+  h1
+    font-size: 30px
+
+  .slogan
+    font-size: 14px
+
+  .about-candidate__img
+    width: 200px
+    margin: 0
+    position: absolute
+    left: 20px
+    bottom: 0
+
+  .menu
+    width: calc(100% - 185px)
+    flex-direction: row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 60px 0 20px auto
+    li
+      margin: 0
+
+  .about-candidate__content
+    max-width: none
+    margin: 0
+
+  .about-candidate
+    width: 100%
+    align-items: center
+    padding: 50px 0 0 170px
+
+  .about-content__box
+    max-width: 49%
+
+  .about-content__img
+    margin: 20px auto
+
+  .links
+    font-size: 14px
+
+  .news-box__img
+    height: 200px
+
+  .news-box__body
+    height: calc(100% - 200px)
+
+  .news-box
+    margin: 0 0 25px
+
+  .photo-section__wrapper
+    justify-content: space-around
+
+  footer
+    padding: 70px 0
+
+  .copyright
+    max-width: 230px
+    margin: 0 20px 0 0
+
+  .col-25
+    width: 50%
+
+  .col-16
+    width: 25%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 650px)
+  .form-group
+    max-width: none
+
+  .form-group__message
+    margin: 10px 0 0
+
+  .callback
+    margin: 30px 0 0
+
+  .copyright
+    max-width: none
+    margin: 20px 0 0
+    order: 1
+
+@media only screen and (max-width: 600px)
+  .about-candidate__img
+    width: 150px
+
+  .about-candidate
+    padding: 30px 0 0 120px
+
+  h1
+    font-size: 24px
+    margin: 0 0 15px
+
+  h2
+    font-size: 22px
+
+  .title
+    font-size: 22px
+
+  .menu
+    width: calc(100% - 130px)
+    li
+      a
+        font-size: 12px
+
+  .about-content__box
+    max-width: none
+
+  .main-page
+    .container
+      min-height: auto
+
+  .links-next
+    margin: 20px 0 0
+
+  .col-25
+    width: 100%
+
+  .col-16
+    width: 33.3%
+
+
+
+@media only screen and (max-width: 500px)
+  .menu
+    flex-wrap: wrap
+    margin: 30px 0 20px auto
+    li
+      margin: 0 0 10px
+      width: 50%
+      &:last-child
+        margin: 0 0 10px
+
+  main .container
+    border-radius: 15px
+    text-align: left
+
+  .news-box
+    width: 100%
+
+  .line
+    flex-direction: column
+    align-items: flex-start
+    a
+      margin: 10px 0 0
+
+
+  .list-document li
+    margin: 0 0 30px
+    a .text
+      max-width: none
+      br
+        display: none
+
+  .article-wrapper__img .image
+    width: 100%
+    margin: 0 0 20px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 400px)
+  .menu
+    margin: 40px 0 20px auto
+    li
+      width: 100%
+
+  .about-candidate
+    padding-left: 0
+
+  .social
+    flex-direction: column
+    align-items: flex-start
+    p
+      max-width: none
+      margin: 0 0 20px
+
+  footer
+    padding: 50px 0
+
+  .col-16
+    width: 50%
+
+  .breadcrumbs
+    margin: 0 0 25px
+
+
+
+

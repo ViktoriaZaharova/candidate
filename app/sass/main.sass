@@ -1,0 +1,738 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #147fc9
+  color: #151515
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover
+    text-decoration: none
+
+.container
+  position: relative
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  max-width: 1345px
+  padding: 0 15px
+  z-index: 1
+
+//header
+header
+  position: relative
+  color: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 824px
+    background: url("../img/bg1.png") no-repeat center top
+      size: 100%
+  .container
+    align-items: flex-end
+
+.about-candidate
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+
+.about-candidate__img
+  margin: 0 -80px 0 0
+
+.about-candidate__content
+  max-width: 445px
+  width: 100%
+  font-family: $gerbera
+  margin: 0 0 43px
+
+h1
+  letter-spacing: 0.63px
+  font-size: 57.5px
+  font-weight: 900
+  line-height: 1
+  margin: 0 0 20px
+
+.slogan
+  font-size: 21px
+  font-weight: 500
+  line-height: 1
+  letter-spacing: 0.23px
+
+.menu
+  margin: 0 0 43px auto
+  li
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    a
+      letter-spacing: 0.18px
+      font-weight: 500
+      color: #ffffff
+      &:hover
+        color: #151515
+
+//footer
+footer
+  position: relative
+  color: #fff
+  padding: 127px 0 106px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 424px
+    background: url("../img/bg2.png") no-repeat center bottom
+      size: 100%
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 8px 0 0
+    a
+      background: #fff
+    &:first-child
+      a
+        background: transparent
+    &:last-child
+      margin: 0
+    a
+      width: 32px
+      height: 32px
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #fff
+      border-radius: 50%
+
+.copyright
+  max-width: 387px
+  width: 100%
+  font-size: 15px
+  margin: 0 69px 0 0
+  p
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+  strong
+    font-weight: bold
+
+.social
+  display: flex
+  align-items: center
+  margin: 0 0 24px
+  p
+    max-width: 190px
+    width: 100%
+    font-size: 14px
+    margin: 0 17px 0 0
+
+.menu-footer
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      font-size: 15px
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+
+//main
+main
+  position: relative
+  z-index: 1
+  .container
+    background: #fff
+    border-radius: 21px
+    box-shadow: 4px 6.9px 15px 0 rgba(10, 10, 8, 0.15)
+    padding: 38px 40px 45px
+    text-align: justify
+
+.box-text
+  line-height: 1.56
+
+.w-100
+  width: 100%
+
+.about-content__wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+
+.about-content__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 34px 0 0
+  max-width: 346px
+  width: 100%
+  h3
+    text-align: center
+    color: #147fc9
+    font-weight: 500
+    font-family: $gerbera
+    font-size: 23.5px
+
+.about-content__img
+  margin: 27px auto
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  width: 120px
+  height: 120px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  flex-wrap: wrap
+  margin: 0 0 29px
+  .links
+    text-decoration: underline
+  .date
+    width: 100%
+    margin: 29px 0 0
+    font-size: 15px
+    font-weight: bold
+    color: #c3c7c4
+
+.links
+  color: #fff
+  line-height: 1.87
+  letter-spacing: 0.17px
+  font-size: 15px
+
+.links-accent
+  color: #147fc9
+  text-decoration: underline
+  font-size: 15px
+
+.title
+  font-size: 23px
+  color: #147fc9
+  font-weight: 500
+  font-family: $gerbera
+  letter-spacing: 0
+  margin: 0
+
+h2
+  color: #fff
+  line-height: 1.33
+  letter-spacing: 0.33px
+  font-size: 30px
+
+//news
+.news
+  margin: 40px 0 0
+
+.news-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
+.news-box
+  box-shadow: 4px 6.9px 15px 0 rgba(10, 10, 8, 0.15)
+  border: solid 3px #ffffff
+  background-color: #ffffff
+  width: 416px
+  height: 432px
+  border-radius: 21px
+  overflow: hidden
+  margin: 0 0 44px
+  line-height: 1.65
+  font-size: 17px
+  color: #232323
+  a
+    color: #232323
+
+.news-box__img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 269px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.news-box__body
+  padding: 30px 35px
+  height: calc(100% - 269px)
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.date
+  margin: auto 0 0
+  color: #656565
+  font-size: 12px
+  font-weight: 300
+  letter-spacing: 0.13px
+
+//gallery
+.photo-section
+  width: 416px
+
+.photo-section__wrapper
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
+.photo-box
+  margin: 0 0 13px
+  width: 95px
+  height: 95px
+  background-color: #4b4b4b
+
+.video-section
+  width: calc(100% - 416px)
+  padding: 0 0 0 32px
+
+.video-section__wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.video-box
+  width: 279px
+  color: #fff
+  font-size: 12px
+  line-height: 1.38
+  .date
+    font-size: 12px
+    color: #6cc3ff
+    margin: 0
+  img
+    width: 100%
+
+
+.video-box__name
+  margin: 15px 0 8px
+
+//materials
+.printed-materials
+  margin: 35px 0 0
+
+.list-document
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  border-bottom: 2px solid #fff
+  li
+    margin: 0 0 49px
+    a
+      color: #fff
+      letter-spacing: 0.15px
+      font-size: 14px
+      display: flex
+      align-items: center
+      .text
+        text-decoration: underline
+        max-width: 308px
+      .icon
+        margin: 0 14px 0 0
+        width: 28px
+        min-width: 28px
+      &:hover
+        .text
+          text-decoration: none
+
+
+//callback
+.callback
+  color: #fff
+  margin: 37px 0 0
+  .description
+    font-size: 14px
+    margin: 0 0 25px
+
+.form
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  button
+    margin: 29px 0 0 10px
+    max-width: 123px
+
+label
+  display: block
+  margin: 0 0 12px
+  &:last-child
+    margin: 0
+
+.form-group
+  max-width: 360px
+  width: 100%
+
+.form-group__message
+  max-width: 612px
+
+.form-group__check
+  max-width: 300px
+
+input, textarea
+  outline: none
+  box-sizing: border-box
+  font-family: $default-font
+  font-size: 13px
+  border: none
+    radius: 20px
+  width: 100%
+  padding: 0 20px
+
+input
+  background: #fff
+  color: #313131
+  height: 31px
+  &::placeholder
+    color: #313131
+
+textarea
+  border: solid 2px #ffffff
+  background: transparent
+  height: 102px
+  padding: 10px 20px
+  color: #fff
+  &::placeholder
+    color: #fff
+
+.checkbox
+  margin: 20px 0 29px
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  font-size: 12px
+  justify-content: space-between
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 9px
+    min-width: 9px
+    height: 9px
+    display: inline-block
+    vertical-align: middle
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin: 5px 8px 0 0
+  .label
+    display: inline-block
+    vertical-align: middle
+    cursor: pointer
+
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: #6cc3ff
+
+.input-title
+  margin: 0 0 7px
+  display: inline-block
+  padding: 0 0 0 10px
+  font-size: 13px
+  font-weight: bold
+
+
+button
+  outline: none
+  padding: 0
+  box-sizing: border-box
+  cursor: pointer
+  transition: .3s ease
+  background: transparent
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  height: 31px
+  width: 100%
+
+.btn-border
+  color: #fff
+  font-size: 13px
+  font-weight: bold
+  border-radius: 15px
+  border: solid 2px #ffffff
+  &:hover
+    background: #fff
+    color: #6cc3ff
+
+//main page
+.main-page
+  .news-box
+    margin: 0 0 30px
+  .container
+    min-height: 1022px
+    flex-direction: column
+    align-items: flex-start
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 40px 0 0
+  li
+    margin: 0 18px 0 0
+    &:last-child
+      margin: 0 0 0 12px
+      a
+        &:before
+          border-top: 7px solid transparent
+          border-left: 13px solid #147fc9
+          border-bottom: 7px solid transparent
+    &:first-child
+      margin: 0 30px 0 0
+      a
+        &:before
+          border-top: 7px solid transparent
+          border-right: 13px solid #147fc9
+          border-bottom: 7px solid transparent
+    &:first-child, &:last-child
+      a
+        background: transparent
+        width: 13px
+        height: 14px
+        &:before
+          content: ''
+          width: 0
+          height: 0
+          left: 50%
+          top: 50%
+          position: absolute
+          transform: translate(-50%,-50%)
+
+    a
+      width: 13px
+      height: 13px
+      background: #d1d1d1
+      border-radius: 50%
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #fff
+      position: relative
+      font-size: 12px
+      font-weight: bold
+      .text
+        display: none
+    .active
+      width: 25px
+      height: 25px
+      background: #147fc9
+      .text
+        display: block
+
+.breadcrumbs
+  margin: 0 0 40px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-wrap: wrap
+  color: #313131
+  font-size: 15px
+  li
+    &:last-child
+      a
+        &:before
+          display: none
+    a
+      color: #313131
+      font-size: 15px
+      display: flex
+      align-items: center
+      &:after
+        content: '—'
+        display: inline-block
+        margin: 0 10px
+      &:hover
+        color: #147fc9
+    span
+      text-decoration: underline
+
+.article-wrapper__img
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  .image
+    margin: 0 0 39px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 49%
+    img
+      width: 100%
+
+.article
+  .text
+    font-size: 15px
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+
+.links-next
+  margin: auto 0 0
+
+.col-25
+  width: 23%
+  padding: 0 10px 0 0
+
+.col-16
+  width: 16.6%
+  padding: 0 5px
+
+.video-page
+  .video-section__wrapper
+    justify-content: flex-start
+  .video-box
+    max-width: none
+    color: #000000
+    .date
+      color: #147fc9
+
+.gallery-page
+  .photo-box
+    width: 100%
+    height: auto
+    margin: 0 auto 12px
+  .photo-section__wrapper
+    justify-content: flex-start
+
+.fancybox-button--close
+  width: 38px
+  height: 38px
+  background: url("../img/close.png") no-repeat center
+    size: contain
+  svg
+    display: none
+
+@import "media"
+// Всегда в конце
