@@ -921,7 +921,7 @@ button {
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1330px) {
   .news-box {
     width: 32%;
     height: auto; }
@@ -932,7 +932,9 @@ button {
   .form-group__message {
     max-width: 450px; }
   .video-page .video-box {
-    width: 100%; } }
+    width: 100%; }
+  main .container {
+    width: calc(100% - 30px); } }
 
 @media only screen and (max-width: 1250px) {
   .video-section__wrapper {
